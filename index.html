@@ -18,10 +18,15 @@
         <!-- Citation Dialog -->
         <dialog>
             <form method="dialog">
+                <label>BibTeX</label>
                 <button type="submit">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
                 </button>
-                <p></p>
+                <button class="copy" onclick="onCopyClick(event)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                </button>
+                <div></div>
+                <textarea readonly></textarea>
             </form>
         </dialog>
 
@@ -56,7 +61,7 @@
                             <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
                         </div>
                         <div class="citation citation-bibtex">
-                            @INPROCEEDINGS{9269055,
+                            @INPROCEEDINGS{copstein2021temporal,
                                 author={Copstein, Rafael and Zincir-Heywood, Nur},
                                 booktitle={2020 16th International Conference on Network and Service Management (CNSM)}, 
                                 title={Temporal Representations for Detecting BGP Blackjack Attacks}, 
@@ -64,7 +69,8 @@
                                 volume={},
                                 number={},
                                 pages={1-7},
-                                doi={10.23919/CNSM50824.2020.9269055}}
+                                doi={10.23919/CNSM50824.2020.9269055}
+                            }
                         </div>
                     </div>
 
@@ -76,6 +82,17 @@
                         <div class="links">
                             <a target="_blank" href="/etc/publications/[PAPER] Distributed File System for an Edge Based Environment.pdf">Download</a>
                             <a target="_blank" href="https://arxiv.org/abs/2006.09182">arXiv</a>
+                            <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
+                        </div>
+                        <div class="citation citation-bibtex">
+                            @misc{copstein2020distributed,
+                                title={Distributed File System for an Edge-Based Environment}, 
+                                author={R. Copstein and F. Dotti},
+                                year={2020},
+                                eprint={2006.09182},
+                                archivePrefix={arXiv},
+                                primaryClass={cs.DC}
+                            }
                         </div>
                     </div>
 
@@ -90,6 +107,19 @@
                         <div class="links">
                             <a target="_blank" href="/etc/publications/[PAPER] DirectFlow - A Robust Method for Ocular Torsion Measurement.pdf">Download</a>
                             <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8753977">IEEE&nbsp;Xplore</a>
+                            <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
+                        </div>
+                        <div class="citation citation-bibtex">
+                            @INPROCEEDINGS{stahl2019directflow,
+                                author={Kozen Stahl, Bruno and Pavanatto Soares, Leonardo and Abichequer Sangalli, Vicenzo and Costa Klein, Pedro and Neujahr Copstein, Rafael and Sarroglia Pinho, Márcio},
+                                booktitle={2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC)}, 
+                                title={DirectFlow: A Robust Method for Ocular Torsion Measurement}, 
+                                year={2019},
+                                volume={1},
+                                number={},
+                                pages={300-305},
+                                doi={10.1109/COMPSAC.2019.00052}
+                            }
                         </div>
                     </div>
 
@@ -104,6 +134,19 @@
                         <div class="links">
                             <a target="_blank" href="/etc/publications/[PAPER] Image Processing Strategies for Automatic Detection of Common Gastroenterological Diseases.pdf">Download</a>
                             <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8377715">IEEE&nbsp;Xplore</a>
+                            <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
+                        </div>
+                        <div class="citation citation-bibtex">
+                            @INPROCEEDINGS{copstein2018image,
+                                author={Neujahr Copstein, Rafael and Abichequer, Vicenzo and Cruz Andrade, Matheus and Almeida Machado, Lucas and Rodrigues, Evandro and Pavanatto Soares, Leonardo and Sarroglia Pinho, Marcio},
+                                booktitle={2018 IEEE 42nd Annual Computer Software and Applications Conference (COMPSAC)}, 
+                                title={Image Processing Strategies for Automatic Detection of Common Gastroenterological Diseases}, 
+                                year={2018},
+                                volume={01},
+                                number={},
+                                pages={593-598},
+                                doi={10.1109/COMPSAC.2018.00090}
+                            }
                         </div>
                     </div>
 

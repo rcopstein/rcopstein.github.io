@@ -43,6 +43,17 @@ a {
 
 /* Dialog */
 dialog {
+    background: none;
+    padding: 2.5em;
+    border: none;
+}
+
+dialog div {
+    float: none;
+    clear: both;
+}
+
+dialog form {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 2px;
     background: #fff;
@@ -50,28 +61,46 @@ dialog {
     border: none;
 }
 
-dialog p {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 0px;
+dialog label {
+    font-family: "Source Serif Pro", serif;
+    line-height: 24px;
+    float: left;
 }
 
 dialog button {
     background-color: transparent;
-    margin: 0px 0px 0px auto;
+    margin: 0 0 0 0.75em;
     cursor: pointer;
     display: block;
     padding: 0px;
     height: 24px;
     border: none;
+    float: right;
 }
- 
-dialog button:active, dialog button:focus {
+
+dialog textarea, 
+dialog textarea:focus, 
+dialog textarea:active,
+dialog textarea:focus-visible {
+    font-family: 'Courier New', monospace;
+    margin-bottom: 0px;
+    max-width: 600px;
+    margin-top: 2em;
+    height: 175px;
+    outline: none;
+    resize: none;
     border: none;
+    width: 100vw;
 }
 
 dialog button:hover svg {
     fill: #999999;
 }
+
+dialog button:active, dialog button:focus {
+    border: none;
+}
+
 
 /* Hero */
 

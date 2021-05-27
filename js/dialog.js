@@ -3,16 +3,25 @@ function onCitationClick(event) {
     let srcElement = event.srcElement;
     let citationElement = srcElement.parentElement.parentElement.querySelector('.citation');
     var citationText = citationElement.innerText.toString().trim();
-    citationText = citationText.replace(/\ \ +/g, "<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-    dialogTextarea.innerHTML = citationText;
+    citationText = citationText.replace(/\ \ +/g, " ");
+    citationText = citationText.replace(" }", "}");
+
+    dialogTextarea.value = citationText;
+    dialogCopy.style.display = document.queryCommandSupported('copy') ? 'block' : 'none';
+
     dialog.showModal();
 }
 
-// Find dialog textbox
-let dialog = document.querySelector("dialog");
-let dialogTextarea = dialog.querySelector("p");
-dialogPolyfill.registerDialog(dialog);
+function onCopyClick(event) {
+    event.preventDefault();
+    dialogTextarea.select();
+    document.execCommand('copy');
+}
 
-// Attach listener to all ".cite" buttons
-let buttons = document.querySelectorAll('.cite');
-// buttons.forEach((x) => x.addEventListener('click', onCitationClick))
+// Find components
+let dialog = document.querySelector("dialog");
+let dialogCopy = dialog.querySelector(".copy");
+let dialogTextarea = dialog.querySelector("textarea");
+
+// Register polyfill
+dialogPolyfill.registerDialog(dialog);
