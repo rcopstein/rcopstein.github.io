@@ -115,6 +115,61 @@ dialog button:active, dialog button:focus {
 }
 
 
+/* Software */
+
+.software .entry {
+    font-family: "Source Serif Pro", serif;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    margin-bottom: 2.5em;
+    display: grid;
+}
+
+.software .entry:last-of-type {
+    margin-bottom: 1em;
+}
+
+.software .entry img {
+    margin-right: 20px;
+    grid-row: 1/3;
+    height: 48px;
+    width: 48px;
+}
+
+.software .entry .title {
+    margin-bottom: 0.125em;
+    font-size: 1.25em;
+}
+
+.software .entry .subtitle {
+    color: #999999;
+}
+
+.software .entry .links {
+    margin-top: 0.75em;
+    grid-column: 2;
+}
+
+.software .entry .links a {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0.25em;
+    background: #005f99;
+    margin-right: 0.125em;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: #ffffff;
+}
+
+.software .entry .links a:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #004772;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: #ffffff;
+}
+
+
 /* Publications */
 
 .publications .entry {
@@ -133,6 +188,7 @@ dialog button:active, dialog button:focus {
     margin-right: 1em;
     color: #aaaaaa;
     grid-column: 1;
+    width: 48px;
 }
 
 .publications .entry .year.hide {
