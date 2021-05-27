@@ -13,10 +13,10 @@ html, body {
 
 .container {
     box-sizing: border-box;
+    padding: 5em 3em;
     max-width: 64em;
     display: block;
     margin: 0 auto;
-    padding: 5em;
     width: 100%
 }
 
@@ -39,6 +39,38 @@ a:hover {
 a {
     text-decoration: none;
     color: #005f99;
+}
+
+/* Dialog */
+dialog {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 2px;
+    background: #fff;
+    padding: 1.5em;
+    border: none;
+}
+
+dialog p {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+}
+
+dialog button {
+    background-color: transparent;
+    margin: 0px 0px 0px auto;
+    cursor: pointer;
+    display: block;
+    padding: 0px;
+    height: 24px;
+    border: none;
+}
+ 
+dialog button:active, dialog button:focus {
+    border: none;
+}
+
+dialog button:hover svg {
+    fill: #999999;
 }
 
 /* Hero */
@@ -98,14 +130,16 @@ a {
 }
 
 .publications .entry .links {
-    margin-top: 1em;
+    margin-top: 0.5em;
     grid-column: 2;
 }
 
 .publications .entry .links a {
     font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0.25em;
     background: #005f99;
     margin-right: 0.125em;
+    display: inline-block;
     border-radius: 5px;
     padding: 8px 16px;
     color: #ffffff;
@@ -117,6 +151,10 @@ a {
     border-radius: 5px;
     padding: 8px 16px;
     color: #ffffff;
+}
+
+.publications .entry .citation {
+    display: none;
 }
 
 
