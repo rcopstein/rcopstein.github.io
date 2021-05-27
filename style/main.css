@@ -1,0 +1,129 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container:not(:last-of-type) {
+    padding-bottom: 0;
+}
+
+.container:not(:first-of-type) {
+    padding-top: 2em;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 64em;
+    display: block;
+    margin: 0 auto;
+    padding: 5em;
+    width: 100%
+}
+
+h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Source Serif Pro', serif;
+    margin: 0.25em 0 0.5em 0;
+    line-height: 1.25em;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #004772;
+}
+
+a {
+    text-decoration: none;
+    color: #005f99;
+}
+
+/* Hero */
+
+.hero p {
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    color: #AAAAAA;
+    max-width: 35em;
+    margin: 1em 0;
+    width: 100%;
+}
+
+
+/* Publications */
+
+.publications .entry {
+    font-family: "Source Serif Pro", serif;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 2.5em;
+    display: grid;
+}
+
+.publications .spacer {
+    height: 2em;
+}
+
+.publications .entry .year {
+    font-size: 1.25em;
+    margin-right: 1em;
+    color: #aaaaaa;
+    grid-column: 1;
+}
+
+.publications .entry .year.hide {
+    user-select: none;
+    opacity: 0;
+}
+
+.publications .entry .title {
+    margin-bottom: 0.125em;
+    font-size: 1.25em;
+    grid-column: 2;
+}
+
+.publications .entry .venue {
+    margin-bottom: 0.25em;
+    color: #999999;
+    grid-column: 2;
+}
+
+.publications .entry .authors {
+    margin-bottom: 0.25em;
+    color: #999999;
+    grid-column: 2;
+}
+
+.publications .entry .links {
+    margin-top: 1em;
+    grid-column: 2;
+}
+
+.publications .entry .links a {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #005f99;
+    margin-right: 0.125em;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: #ffffff;
+}
+
+.publications .entry .links a:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #004772;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: #ffffff;
+}
+
+
+/* Footer */
+.footer {
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+    padding: 7em 0 5em 0;
+    color: #AAAAAA;
+}
