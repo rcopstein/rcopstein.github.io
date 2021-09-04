@@ -1,197 +1,335 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="style/dialog-polyfill.css">
-        <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/dialog-polyfill.css" />
+    <link rel="stylesheet" href="style/main.css" />
 
-        <title>Rafael Copstein</title>
-    </head>
+    <title>Rafael Copstein</title>
+  </head>
 
-    <body>
-        <!-- Citation Dialog -->
-        <dialog>
-            <form method="dialog">
-                <label>BibTeX</label>
-                <button type="submit" title="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-                </button>
-                <button class="copy" onclick="onCopyClick(event)" title="Copy to clipboard">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-                </button>
-                <div></div>
-                <textarea readonly></textarea>
-            </form>
-        </dialog>
+  <body>
+    <!-- Citation Dialog -->
+    <dialog>
+      <form method="dialog">
+        <label>BibTeX</label>
+        <button type="submit" title="Close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </button>
+        <button
+          class="copy"
+          onclick="onCopyClick(event)"
+          title="Copy to clipboard"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+            />
+          </svg>
+        </button>
+        <div></div>
+        <textarea readonly></textarea>
+      </form>
+    </dialog>
 
-        <!-- Hero -->
-        <div class="container">
-            <div class="hero">
-                <h1>Rafael Copstein</h1>
-                <p>
-                    Computer Science Ph.D. student at <a target="_blank" href="https://dal.ca/">Dalhousie&nbsp;University</a> under the supervision 
-                    of <a target="_blank" href="https://cs.dal.ca/~zincir/">Dr.&nbsp;Nur&nbsp;Zincir-Heywood</a>. 
-                    Member of the <a target="_blank" href="https://projects.cs.dal.ca/projectx/">NIMS&nbsp;lab</a>.
-                    Instructor. Digital entrepreneur. Minimalist.
-                </p>
+    <!-- Hero -->
+    <div class="container">
+      <div class="hero">
+        <h1>Rafael Copstein</h1>
+        <p>
+          Computer Science Ph.D. student at
+          <a target="_blank" href="https://dal.ca/"
+            >Dalhousie&nbsp;University</a
+          >
+          under the supervision of
+          <a target="_blank" href="https://cs.dal.ca/~zincir/"
+            >Dr.&nbsp;Nur&nbsp;Zincir-Heywood</a
+          >. Member of the
+          <a target="_blank" href="https://projects.cs.dal.ca/projectx/"
+            >NIMS&nbsp;lab</a
+          >. Instructor. Digital entrepreneur. Minimalist.
+        </p>
+      </div>
+    </div>
+
+    <!-- Software -->
+    <div class="container">
+      <div class="software">
+        <h2>Software</h2>
+        <div class="entries">
+          <!-- Mosaic -->
+          <div class="entry">
+            <img src="img/mosaic-logo.png" />
+            <div class="title">Mosaic - Workspace Manager</div>
+            <div class="subtitle">
+              A window manager for macOS like you've never seen before
             </div>
-        </div>
-
-        <!-- Software -->
-        <div class="container">
-            <div class="software">
-                <h2>Software</h2>
-                <div class="entries">
-
-                    <!-- Mosaic -->
-                    <div class="entry">
-                        <img src="img/mosaic-logo.png" />
-                        <div class="title">Mosaic - Workspace Manager</div>
-                        <div class="subtitle">A window manager for macOS like you've never seen before</div>
-                        <div class="links">
-                            <a target="_blank" href="https://mosaic.rcopstein.com/">Learn More</a>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="links">
+              <a target="_blank" href="https://mosaic.rcopstein.com/"
+                >Learn More</a
+              >
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Publications -->
-        <div class="container">
-            <div class="publications">
-                <h2>Publications</h2>
-                <div class="entries">
-
-                    <!-- 2021 -->
-                    <div class="entry">
-                        <div class="year">2021</div>
-                        <div class="title">Log Abstraction for Information Security: Heuristics and Reproducibility</div>
-                        <div class="venue">16th International Conference on Availability, Reliability and Security (ARES)</div>
-                        <div class="authors">Rafael&nbsp;Copstein, Jeff&nbsp;Schwartzentruber, Nur&nbsp;Zincir-Heywood, Malcolm&nbsp;Heywood</div>
-                        <div class="links">
-                        </div>
-                    </div>
-
-                    <!-- 2020 -->
-                    <div class="entry">
-                        <div class="year">2020</div>
-                        <div class="title">Temporal Representations for Detecting BGP Blackjack Attacks</div>
-                        <div class="venue">16th International Conference on Network and Service Management (CNSM)</div>
-                        <div class="authors">Rafael&nbsp;Copstein, Nur&nbsp;Zincir-Heywood</div>
-                        <div class="links">
-                            <a target="_blank" href="/etc/publications/[PAPER] Temporal Representations for Detecting BGP Blackjack Attacks.pdf">Download</a>
-                            <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9269055">iEEE&nbsp;Xplore</a>
-                            <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
-                        </div>
-                        <div class="citation citation-bibtex">
-                            @INPROCEEDINGS{copstein2020temporal,
-                                author={Copstein, Rafael and Zincir-Heywood, Nur},
-                                booktitle={2020 16th International Conference on Network and Service Management (CNSM)}, 
-                                title={Temporal Representations for Detecting BGP Blackjack Attacks}, 
-                                year={2020},
-                                volume={},
-                                number={},
-                                pages={1-7},
-                                doi={10.23919/CNSM50824.2020.9269055}
-                            }
-                        </div>
-                    </div>
-
-                    <div class="entry">
-                        <div class="year hide">2020</div>
-                        <div class="title">Distributed File System for an Edge-Based Environment</div>
-                        <div class="venue">arXiv</div>
-                        <div class="authors">Rafael&nbsp;Copstein, Fernando&nbsp;Dotti</div>
-                        <div class="links">
-                            <a target="_blank" href="/etc/publications/[PAPER] Distributed File System for an Edge Based Environment.pdf">Download</a>
-                            <a target="_blank" href="https://arxiv.org/abs/2006.09182">arXiv</a>
-                            <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
-                        </div>
-                        <div class="citation citation-bibtex">
-                            @misc{copstein2020distributed,
-                                title={Distributed File System for an Edge-Based Environment}, 
-                                author={R. Copstein and F. Dotti},
-                                year={2020},
-                                eprint={2006.09182},
-                                archivePrefix={arXiv},
-                                primaryClass={cs.DC}
-                            }
-                        </div>
-                    </div>
-
-                    <div class="spacer"></div>
-
-                    <!-- 2019 -->
-                    <div class="entry">
-                        <div class="year">2019</div>
-                        <div class="title">DirectFlow: A Robust Method for Ocular Torsion Measurement</div>
-                        <div class="venue">IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC)</div>
-                        <div class="authors">Bruno&nbsp;Kozen&nbsp;Stahl, Leonardo&nbsp;Pavanatto&nbsp;Soares, Vicenzo&nbsp;Abichequer&nbsp;Sangalli, Pedro&nbsp;Costa&nbsp;Klein, Rafael&nbsp;Neujahr&nbsp;Copstein, Márcio&nbsp;Sarroglia&nbsp;Pinho</div>
-                        <div class="links">
-                            <a target="_blank" href="/etc/publications/[PAPER] DirectFlow - A Robust Method for Ocular Torsion Measurement.pdf">Download</a>
-                            <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8753977">IEEE&nbsp;Xplore</a>
-                            <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
-                        </div>
-                        <div class="citation citation-bibtex">
-                            @INPROCEEDINGS{stahl2019directflow,
-                                author={Kozen Stahl, Bruno and Pavanatto Soares, Leonardo and Abichequer Sangalli, Vicenzo and Costa Klein, Pedro and Neujahr Copstein, Rafael and Sarroglia Pinho, Márcio},
-                                booktitle={2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC)}, 
-                                title={DirectFlow: A Robust Method for Ocular Torsion Measurement}, 
-                                year={2019},
-                                volume={1},
-                                number={},
-                                pages={300-305},
-                                doi={10.1109/COMPSAC.2019.00052}
-                            }
-                        </div>
-                    </div>
-
-                    <div class="spacer"></div>
-
-                    <!-- 2018 -->
-                    <div class="entry">
-                        <div class="year">2018</div>
-                        <div class="title">Image Processing Strategies for Automatic Detection of Common Gastroenterological Diseases</div>
-                        <div class="venue">IEEE 42nd Annual Computer Software and Applications Conference (COMPSAC)</div>
-                        <div class="authors">Rafael&nbsp;Neujahr&nbsp;Copstein, Vicenzo&nbsp;Abichequer, Matheus&nbsp;Cruz&nbsp;Andrade, Lucas&nbsp;Almeida&nbsp;Machado, Evandro&nbsp;Rodrigues, Leonardo&nbsp;Pavanatto&nbsp;Soares, Marcio&nbsp;Sarroglia&nbsp;Pinho</div>
-                        <div class="links">
-                            <a target="_blank" href="/etc/publications/[PAPER] Image Processing Strategies for Automatic Detection of Common Gastroenterological Diseases.pdf">Download</a>
-                            <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8377715">IEEE&nbsp;Xplore</a>
-                            <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
-                        </div>
-                        <div class="citation citation-bibtex">
-                            @INPROCEEDINGS{copstein2018image,
-                                author={Neujahr Copstein, Rafael and Abichequer, Vicenzo and Cruz Andrade, Matheus and Almeida Machado, Lucas and Rodrigues, Evandro and Pavanatto Soares, Leonardo and Sarroglia Pinho, Marcio},
-                                booktitle={2018 IEEE 42nd Annual Computer Software and Applications Conference (COMPSAC)}, 
-                                title={Image Processing Strategies for Automatic Detection of Common Gastroenterological Diseases}, 
-                                year={2018},
-                                volume={01},
-                                number={},
-                                pages={593-598},
-                                doi={10.1109/COMPSAC.2018.00090}
-                            }
-                        </div>
-                    </div>
-
-                </div>
+    <!-- Publications -->
+    <div class="container">
+      <div class="publications">
+        <h2>Publications</h2>
+        <div class="entries">
+          <!-- 2021 -->
+          <div class="entry">
+            <div class="year">2021</div>
+            <div class="title">
+              Log Abstraction for Information Security: Heuristics and
+              Reproducibility
             </div>
-        </div>
+            <div class="venue">
+              16th International Conference on Availability, Reliability and
+              Security (ARES)
+            </div>
+            <div class="authors">
+              Rafael&nbsp;Copstein, Jeff&nbsp;Schwartzentruber,
+              Nur&nbsp;Zincir-Heywood, Malcolm&nbsp;Heywood
+            </div>
+            <div class="links">
+              <a
+                target="_blank"
+                href="/etc/publications/[PAPER] Log Abstraction for Information Security - Heuristics and Reproducibility.pdf"
+                >Download</a
+              >
+              <a
+                target="_blank"
+                href="https://dl.acm.org/doi/abs/10.1145/3465481.3470083"
+                >ACM Digital Library</a
+              >
+              <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
+            </div>
+            <div class="citation citation-bibtex">
+              @inproceedings{copstein2021logAbstraction, author = {Copstein,
+              Rafael and Schwartzentruber, Jeff and Zincir-Heywood, Nur and
+              Heywood, Malcolm}, title = {Log Abstraction for Information
+              Security: Heuristics and Reproducibility}, year = {2021}, isbn =
+              {9781450390514}, publisher = {Association for Computing
+              Machinery}, address = {New York, NY, USA}, url =
+              {https://doi.org/10.1145/3465481.3470083}, doi =
+              {10.1145/3465481.3470083}, abstract = { The collection of log
+              messages regarding the operation of deployed services and
+              application is an integral component to the forensic analysis for
+              the identification and understanding of security incidents.
+              Approaches for parsing and abstraction of such logs, despite
+              widespread use and study, do not directly account for the
+              individualities of the domain of information security. This, in
+              return, limits their applicability on the field. In this work, we
+              analyze the state-of-the-art log parsing and abstraction
+              algorithms from the perspective of information security. First, we
+              reproduce/replicate previous analysis of such algorithms from the
+              literature. Then, we evaluate their ability for parsing and
+              abstraction of log files for forensic analysis purposes. Our study
+              demonstrates that while the state-of-the-art techniques are
+              accurate in log parsing, improvements are necessary in terms of
+              achieving a holistic view to aid in forensic analysis for the
+              identification and understanding of security incidents. },
+              booktitle = {The 16th International Conference on Availability,
+              Reliability and Security}, articleno = {93}, numpages = {10},
+              keywords = {application logs, system logs, log abstraction and
+              parsing, information security}, location = {Vienna, Austria},
+              series = {ARES 2021} }
+            </div>
+          </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            Last Updated in May 2021<br />
-            Halifax, NS - Canada
-        </div>
+          <!-- 2020 -->
+          <div class="entry">
+            <div class="year">2020</div>
+            <div class="title">
+              Temporal Representations for Detecting BGP Blackjack Attacks
+            </div>
+            <div class="venue">
+              16th International Conference on Network and Service Management
+              (CNSM)
+            </div>
+            <div class="authors">
+              Rafael&nbsp;Copstein, Nur&nbsp;Zincir-Heywood
+            </div>
+            <div class="links">
+              <a
+                target="_blank"
+                href="/etc/publications/[PAPER] Temporal Representations for Detecting BGP Blackjack Attacks.pdf"
+                >Download</a
+              >
+              <a
+                target="_blank"
+                href="https://ieeexplore.ieee.org/abstract/document/9269055"
+                >iEEE&nbsp;Xplore</a
+              >
+              <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
+            </div>
+            <div class="citation citation-bibtex">
+              @INPROCEEDINGS{copstein2020temporal, author={Copstein, Rafael and
+              Zincir-Heywood, Nur}, booktitle={2020 16th International
+              Conference on Network and Service Management (CNSM)},
+              title={Temporal Representations for Detecting BGP Blackjack
+              Attacks}, year={2020}, volume={}, number={}, pages={1-7},
+              doi={10.23919/CNSM50824.2020.9269055} }
+            </div>
+          </div>
 
-        <!-- Script -->
-        <script type="text/javascript" src="js/dialog-polyfill.js"></script>
-        <script type="text/javascript" src="js/dialog.js"></script>
-    </body>
+          <div class="entry">
+            <div class="year hide">2020</div>
+            <div class="title">
+              Distributed File System for an Edge-Based Environment
+            </div>
+            <div class="venue">arXiv</div>
+            <div class="authors">Rafael&nbsp;Copstein, Fernando&nbsp;Dotti</div>
+            <div class="links">
+              <a
+                target="_blank"
+                href="/etc/publications/[PAPER] Distributed File System for an Edge Based Environment.pdf"
+                >Download</a
+              >
+              <a target="_blank" href="https://arxiv.org/abs/2006.09182"
+                >arXiv</a
+              >
+              <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
+            </div>
+            <div class="citation citation-bibtex">
+              @misc{copstein2020distributed, title={Distributed File System for
+              an Edge-Based Environment}, author={R. Copstein and F. Dotti},
+              year={2020}, eprint={2006.09182}, archivePrefix={arXiv},
+              primaryClass={cs.DC} }
+            </div>
+          </div>
+
+          <div class="spacer"></div>
+
+          <!-- 2019 -->
+          <div class="entry">
+            <div class="year">2019</div>
+            <div class="title">
+              DirectFlow: A Robust Method for Ocular Torsion Measurement
+            </div>
+            <div class="venue">
+              IEEE 43rd Annual Computer Software and Applications Conference
+              (COMPSAC)
+            </div>
+            <div class="authors">
+              Bruno&nbsp;Kozen&nbsp;Stahl, Leonardo&nbsp;Pavanatto&nbsp;Soares,
+              Vicenzo&nbsp;Abichequer&nbsp;Sangalli,
+              Pedro&nbsp;Costa&nbsp;Klein, Rafael&nbsp;Neujahr&nbsp;Copstein,
+              Márcio&nbsp;Sarroglia&nbsp;Pinho
+            </div>
+            <div class="links">
+              <a
+                target="_blank"
+                href="/etc/publications/[PAPER] DirectFlow - A Robust Method for Ocular Torsion Measurement.pdf"
+                >Download</a
+              >
+              <a
+                target="_blank"
+                href="https://ieeexplore.ieee.org/abstract/document/8753977"
+                >IEEE&nbsp;Xplore</a
+              >
+              <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
+            </div>
+            <div class="citation citation-bibtex">
+              @INPROCEEDINGS{stahl2019directflow, author={Kozen Stahl, Bruno and
+              Pavanatto Soares, Leonardo and Abichequer Sangalli, Vicenzo and
+              Costa Klein, Pedro and Neujahr Copstein, Rafael and Sarroglia
+              Pinho, Márcio}, booktitle={2019 IEEE 43rd Annual Computer Software
+              and Applications Conference (COMPSAC)}, title={DirectFlow: A
+              Robust Method for Ocular Torsion Measurement}, year={2019},
+              volume={1}, number={}, pages={300-305},
+              doi={10.1109/COMPSAC.2019.00052} }
+            </div>
+          </div>
+
+          <div class="spacer"></div>
+
+          <!-- 2018 -->
+          <div class="entry">
+            <div class="year">2018</div>
+            <div class="title">
+              Image Processing Strategies for Automatic Detection of Common
+              Gastroenterological Diseases
+            </div>
+            <div class="venue">
+              IEEE 42nd Annual Computer Software and Applications Conference
+              (COMPSAC)
+            </div>
+            <div class="authors">
+              Rafael&nbsp;Neujahr&nbsp;Copstein, Vicenzo&nbsp;Abichequer,
+              Matheus&nbsp;Cruz&nbsp;Andrade, Lucas&nbsp;Almeida&nbsp;Machado,
+              Evandro&nbsp;Rodrigues, Leonardo&nbsp;Pavanatto&nbsp;Soares,
+              Marcio&nbsp;Sarroglia&nbsp;Pinho
+            </div>
+            <div class="links">
+              <a
+                target="_blank"
+                href="/etc/publications/[PAPER] Image Processing Strategies for Automatic Detection of Common Gastroenterological Diseases.pdf"
+                >Download</a
+              >
+              <a
+                target="_blank"
+                href="https://ieeexplore.ieee.org/abstract/document/8377715"
+                >IEEE&nbsp;Xplore</a
+              >
+              <a class="cite" href="" onclick="onCitationClick(event)">Cite</a>
+            </div>
+            <div class="citation citation-bibtex">
+              @INPROCEEDINGS{copstein2018image, author={Neujahr Copstein, Rafael
+              and Abichequer, Vicenzo and Cruz Andrade, Matheus and Almeida
+              Machado, Lucas and Rodrigues, Evandro and Pavanatto Soares,
+              Leonardo and Sarroglia Pinho, Marcio}, booktitle={2018 IEEE 42nd
+              Annual Computer Software and Applications Conference (COMPSAC)},
+              title={Image Processing Strategies for Automatic Detection of
+              Common Gastroenterological Diseases}, year={2018}, volume={01},
+              number={}, pages={593-598}, doi={10.1109/COMPSAC.2018.00090} }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Last Updated in May 2021<br />
+      Halifax, NS - Canada
+    </div>
+
+    <!-- Script -->
+    <script type="text/javascript" src="js/dialog-polyfill.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+  </body>
 </html>
